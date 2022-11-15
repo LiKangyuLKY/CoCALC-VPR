@@ -56,13 +56,13 @@ def regions_filter(image, max_choose):
     return multichannel_images, hog_label
 
 
-class CoCALC(Dataset):
+class DataCoCALC(Dataset):
     """
     定义CohogNet算法的数据类
     """
 
     def __init__(self, data_dir):
-        super(CoCALC, self).__init__()
+        super(DataCoCALC, self).__init__()
         self.data_dir = data_dir
 
         # 遍历图像数据
